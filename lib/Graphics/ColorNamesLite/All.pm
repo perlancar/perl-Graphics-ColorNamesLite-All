@@ -31,7 +31,7 @@ for my $m (qw/CSS Crayola EmergyC HTML IE Mozilla Netscape PantoneReport VACCC W
 }
 print 'our $NAMES_RGB_TABLE = '; dd $t; print ";";
 print "\n\n";
-print 'our $NAMES_SUMMARY_TABLE = '; dd $tsummary; print ";";
+print 'our $NAMES_SUMMARIES_TABLE = '; dd $tsummary; print ";";
 # END_CODE
 
 1;
