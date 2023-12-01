@@ -1,3 +1,9 @@
+0.004   2023-12-01  Released-By: PERLANCAR; Urgency: medium
+
+        - [incompatible change] Rename variable NAMES_SUMMARY_TABLE ->
+          NAMES_SUMMARIES_TABLE.
+
+
 0.003   2023-12-01  Released-By: PERLANCAR; Urgency: medium
 
         - Add $NAMES_SUMMARY_TABLE.
