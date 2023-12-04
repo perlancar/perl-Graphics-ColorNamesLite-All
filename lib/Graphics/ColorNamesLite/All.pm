@@ -24,7 +24,7 @@ for my $m (qw/CSS Crayola EmergyC FoodColor HTML IE Mozilla Netscape PantoneRepo
 
     for (keys %$t2) {
         unless (defined $t->{$_}) {
-            $t->{$_} = sprintf "%06x", $t2->{$_};
+            $t->{$_} = sprintf "%06s", $t2->{$_};
             $tsummary->{$_} = "from $m";
         }
     }
