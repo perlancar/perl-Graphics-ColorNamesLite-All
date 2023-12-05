@@ -13,7 +13,7 @@ no strict 'refs';
 use Data::Dump;
 my $t = {};
 my $tsummary = {};
-for my $m (qw/CSS Crayola EmergyC FoodColor HTML IE Mozilla Netscape PantoneReport VACCC Werner Windows X HTML_ID /) {
+for my $m (qw/CSS Crayola EmergyC FamousLogo FoodColor HTML IE Mozilla Netscape PantoneReport VACCC Werner Windows X HTML_ID /) {
     my $mod = "Graphics::ColorNames::$m";
 
     (my $modpm = "$mod.pm") =~ s!::!/!g;
@@ -24,7 +24,7 @@ for my $m (qw/CSS Crayola EmergyC FoodColor HTML IE Mozilla Netscape PantoneRepo
 
     for (keys %$t2) {
         unless (defined $t->{$_}) {
-            $t->{$_} = sprintf "%06s", $t2->{$_};
+            $t->{$_} = $t2->{$_};
             $tsummary->{$_} = "from $m";
         }
     }
